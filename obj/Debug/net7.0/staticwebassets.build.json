@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SSOBGtD69Z0HJTe07gxVzHwhjSCTnPmGPs+kc6P7/Fk=",
+  "Source": "runSyncBackend",
+  "BasePath": "_content/runSyncBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
