@@ -1,0 +1,327 @@
+{
+  "athletes": [
+    {
+      "id": "1",
+      "name": "Sarah Johnson",
+      "email": "sarah@email.com",
+      "group": "Beginner Group",
+      "joinDate": "2024-01-15",
+      "performance": 85,
+      "improvement": "+12%",
+      "lastRun": "2 days ago",
+      "personalBests": {
+        "5K": "25:30",
+        "10K": "52:15",
+        "halfMarathon": "1:58:30"
+      },
+      "attendance": 85
+    },
+    {
+      "id": "2",
+      "name": "Mike Chen",
+      "email": "mike@email.com",
+      "group": "Intermediate Group",
+      "joinDate": "2023-11-08",
+      "performance": 92,
+      "improvement": "+8%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "21:45",
+        "10K": "45:20",
+        "halfMarathon": "1:42:15"
+      },
+      "attendance": 92
+    },
+    {
+      "id": "3",
+      "name": "Emma Davis",
+      "email": "emma@email.com",
+      "group": "Advanced Group",
+      "joinDate": "2023-09-20",
+      "performance": 88,
+      "improvement": "+15%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "19:30",
+        "10K": "40:45",
+        "halfMarathon": "1:28:30"
+      },
+      "attendance": 96
+    },
+    {
+      "id": "4",
+      "name": "James Wilson",
+      "email": "james@email.com",
+      "group": "Beginner Group",
+      "joinDate": "2024-02-01",
+      "performance": 78,
+      "improvement": "+5%",
+      "lastRun": "3 days ago",
+      "personalBests": {
+        "5K": "28:15",
+        "10K": "58:30",
+        "halfMarathon": "2:15:45"
+      },
+      "attendance": 72
+    },
+    {
+      "id": "5",
+      "name": "Lisa Park",
+      "email": "lisa@email.com",
+      "group": "Intermediate Group",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 88
+    },
+    {
+      "id": "6",
+      "name": "Josip Josipovic",
+      "email": "jozo@email.com",
+      "group": "spansko 4",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 81
+    },
+    {
+      "id": "7",
+      "name": "Nika Nikic",
+      "email": "niksa@email.com",
+      "group": "spansko 5",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 88
+    },
+    {
+      "id": "8",
+      "name": "Marko Markovic",
+      "email": "marks@email.com",
+      "group": "spansko 6",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 83
+    },
+    {
+      "id": "9",
+      "name": "Stipa Stipic",
+      "email": "stips@email.com",
+      "group": "spansko 4",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 82
+    },
+    {
+      "id": "10",
+      "name": "Ana Anic",
+      "email": "anica@email.com",
+      "group": "spansko 5",
+      "joinDate": "2023-12-10",
+      "performance": 90,
+      "improvement": "+18%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "22:30",
+        "10K": "47:15",
+        "halfMarathon": "1:45:20"
+      },
+      "attendance": 88
+    }
+  ],
+  "groups": [
+    {
+      "id": "beginner",
+      "name": "Beginner Group",
+      "members": 8,
+      "avgPace": "8:30",
+      "level": "beginner",
+      "description": "Perfect for new runners building their base"
+    },
+    {
+      "id": "intermediate",
+      "name": "Intermediate Group",
+      "members": 10,
+      "avgPace": "7:15",
+      "level": "intermediate",
+      "description": "For runners with 6+ months experience"
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced Group",
+      "members": 6,
+      "avgPace": "6:45",
+      "level": "advanced",
+      "description": "Competitive runners training for races"
+    }
+  ],
+  "trainings": [
+    {
+      "id": "1",
+      "title": "Speed Intervals",
+      "type": "intervals",
+      "group": "Intermediate Group",
+      "date": "2024-06-12",
+      "duration": 60,
+      "description": "High intensity interval training to improve speed",
+      "intervals": [
+        {
+          "distance": "400m",
+          "repetitions": 6,
+          "rest": "90 seconds",
+          "targetPace": "4:15/km"
+        },
+        {
+          "distance": "200m",
+          "repetitions": 6,
+          "rest": "60 seconds",
+          "targetPace": "4:00/km"
+        }
+      ],
+      "attendance": [2, 5],
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Long Run",
+      "type": "long",
+      "group": "Advanced Group",
+      "date": "2024-06-15",
+      "duration": 90,
+      "description": "Endurance building long run at conversational pace",
+      "attendance": [3, "3"],
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "Recovery Run",
+      "type": "recovery",
+      "group": "Beginner Group",
+      "date": "2024-06-16",
+      "duration": 30,
+      "description": "Easy pace recovery run for active recovery",
+      "attendance": ["4"],
+      "completed": false
+    },
+    {
+      "id": "1e52",
+      "title": "test 1",
+      "group": "spansko 6",
+      "type": "Recovery Run",
+      "duration": 60,
+      "date": "2025-07-09",
+      "intervals": [],
+      "distance": 12,
+      "attendance": [],
+      "description": "test"
+    },
+    {
+      "id": "987a",
+      "title": "test",
+      "group": "spansko 4",
+      "type": "Hill Repeats",
+      "duration": 60,
+      "date": "2025-07-09",
+      "intervals": [],
+      "distance": 12,
+      "attendance": ["6", "9"],
+      "description": "test"
+    }
+  ],
+  "monthlyProgress": [
+    {
+      "month": "Jan",
+      "beginner": 65,
+      "intermediate": 78,
+      "advanced": 85,
+      "id": "4538"
+    },
+    {
+      "month": "Feb",
+      "beginner": 70,
+      "intermediate": 82,
+      "advanced": 88,
+      "id": "84f1"
+    },
+    {
+      "month": "Mar",
+      "beginner": 75,
+      "intermediate": 85,
+      "advanced": 90,
+      "id": "da19"
+    },
+    {
+      "month": "Apr",
+      "beginner": 78,
+      "intermediate": 87,
+      "advanced": 92,
+      "id": "9364"
+    },
+    {
+      "month": "May",
+      "beginner": 82,
+      "intermediate": 90,
+      "advanced": 94,
+      "id": "3cbf"
+    },
+    {
+      "month": "Jun",
+      "beginner": 85,
+      "intermediate": 92,
+      "advanced": 96,
+      "id": "314f"
+    }
+  ],
+  "attendanceData": [
+    {
+      "name": "Present",
+      "value": 75,
+      "color": "#22c55e",
+      "id": "6f4b"
+    },
+    {
+      "name": "Absent",
+      "value": 15,
+      "color": "#ef4444",
+      "id": "e8cd"
+    },
+    {
+      "name": "Partial",
+      "value": 10,
+      "color": "#f59e0b",
+      "id": "5525"
+    }
+  ]
+}

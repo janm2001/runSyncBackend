@@ -1,18 +1,19 @@
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace runSyncBackend.Models
 {
-    public class Intervals
-    {
-        public int Id { get; set; }
+    public class Intervals {
+    [BsonElement("distance")]
+    public string Distance { get; set; } = string.Empty;
 
-        public string distance { get; set; } = string.Empty;
+    [BsonElement("repetitions")]
+    public int Repetitions { get; set; } 
 
-        public int repetitions { get; set; }
+    [BsonElement("rest")]
+    public string Rest { get; set; } = string.Empty;
 
-        public string rest { get; set; } = string.Empty;
-
-        public string targetPace { get; set; } = string.Empty;
-        
-        
-        
+    [BsonElement("targetPace")]
+    public string TargetPace { get; set; } = string.Empty;
 }
  }
