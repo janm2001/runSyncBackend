@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using runSyncBackend.Models;
 
-namespace runSyncBackend.Controllers
-{
+namespace runSyncBackend.Controllers;
+
    [ApiController]
    [Route("api/[controller]")]
     public class AttendanceDataController : ControllerBase
@@ -20,4 +20,3 @@ namespace runSyncBackend.Controllers
         public async Task<List<AttendanceData>> Get() =>
             await _attendanceData.Find(data => true).ToListAsync();
     }
-}

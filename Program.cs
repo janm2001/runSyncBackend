@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using runSyncBackend.service.RunSync.Services;
+using MongoDB.Bson;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +22,20 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+try
+{
+    var databaseTest = app.Services.GetRequiredService<IMongoDatabase>();
+    // Send a ping command to the server.
+    await databaseTest.RunCommandAsync((Command<BsonDocument>)"{ping: 1}");
+    Console.WriteLine("✅ Successfully connected to MongoDB!");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"❌ Failed to connect to MongoDB. Error: {ex.Message}");
+    // Optionally, you can decide to stop the application from starting if the DB is down.
+    // return;
+}
+
 // Seed the database
 using (var scope = app.Services.CreateScope())
 {
@@ -36,6 +51,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseRouting(); 
 
 app.UseAuthorization();
 

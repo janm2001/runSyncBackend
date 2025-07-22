@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using runSyncBackend.Models;
-namespace RunSync.Controllers
-{
+namespace runSyncBackend.Controllers;
+
     [ApiController]
     [Route("api/[controller]")]
     public class GroupsController : ControllerBase
@@ -60,4 +60,3 @@ namespace RunSync.Controllers
             return NoContent();
         }
     }
-}

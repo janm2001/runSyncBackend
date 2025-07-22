@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using runSyncBackend.Models;
-namespace runSyncBackend.Controllers
-{
+
+namespace runSyncBackend.Controllers;
+
     [ApiController]
     [Route("api/[controller]")]
     public class MonthlyProgressController : ControllerBase
@@ -19,4 +20,3 @@ namespace runSyncBackend.Controllers
         public async Task<List<MonthlyProgress>> Get() =>
             await _monthlyProgress.Find(progress => true).ToListAsync();
     }
-}

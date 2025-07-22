@@ -2,8 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using runSyncBackend.Models;
 
-namespace RunSync.Controllers
-{
+namespace runSyncBackend.Controllers;
     [ApiController]
     [Route("api/[controller]")]
     public class AthletesController : ControllerBase
@@ -61,4 +60,3 @@ namespace RunSync.Controllers
             return NoContent();
         }
     }
-}
