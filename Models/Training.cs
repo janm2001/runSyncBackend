@@ -6,6 +6,7 @@ namespace runSyncBackend.Models
     public class Training
     {
         [BsonId]
+         [BsonSerializer(typeof(StringOrObjectIdSerializer))]
         public string Id { get; set; }
 
         [BsonElement("title")]
