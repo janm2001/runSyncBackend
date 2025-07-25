@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("runSyncBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d42b246a3e0074daa55802667d16e60131beedd0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c96f67ccf5bfd1fac0b5fa29dae5df483ccd6bf2")]
 [assembly: System.Reflection.AssemblyProductAttribute("runSyncBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("runSyncBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
