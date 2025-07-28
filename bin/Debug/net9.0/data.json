@@ -1,5 +1,56 @@
 {
-  "athletes": [
+  "athletes": [],
+  "users": [
+    {
+      "id": "u1",
+      "firstName": "Jan",
+      "lastName": "Mackovic",
+      "email": "jan.mackovic@email.com",
+      "passwordHash": "hashedpassword1",
+      "role": "Coach",
+      "clientInfo": null,
+      "coachInfo": {
+        "Id": "a1",
+        "Name": "Jan Mackovic",
+        "Email": "jan.mackovic@email.com",
+        "Group": "Coaches",
+        "JoinDate": "2024-01-01",
+        "Performance": 0,
+        "Improvement": "0%",
+        "LastRun": "-",
+        "PersonalBests": {
+          "FiveK": "",
+          "TenK": "",
+          "HalfMarathon": ""
+        },
+        "Attendance": 0
+      }
+    },
+    {
+      "id": "u2",
+      "firstName": "Hrvoje",
+      "lastName": "Horvat",
+      "email": "hrvoje.horvat@email.com",
+      "passwordHash": "hashedpassword2",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "a2",
+        "Name": "Hrvoje Horvat",
+        "Email": "hrvoje.horvat@email.com",
+        "Group": "Beginner Group",
+        "JoinDate": "2024-02-15",
+        "Performance": 70,
+        "Improvement": "+5%",
+        "LastRun": "3 days ago",
+        "PersonalBests": {
+          "FiveK": "28:00",
+          "TenK": "58:00",
+          "HalfMarathon": "2:10:00"
+        },
+        "Attendance": 80
+      },
+      "coachInfo": null
+    },
     {
       "id": "1",
       "name": "Sarah Johnson",
