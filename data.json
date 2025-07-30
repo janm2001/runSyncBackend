@@ -6,7 +6,7 @@
       "firstName": "Jan",
       "lastName": "Mackovic",
       "email": "jan.mackovic@email.com",
-      "passwordHash": "hashedpassword1",
+      "passwordHash": "$2y$10$3G2d6Sxf3dpzQkNq3d0w9OIlBdej0waN65l/znDbvnM2cSFkfJgd2",
       "role": "Coach",
       "clientInfo": null,
       "coachInfo": {
@@ -31,7 +31,7 @@
       "firstName": "Hrvoje",
       "lastName": "Horvat",
       "email": "hrvoje.horvat@email.com",
-      "passwordHash": "hashedpassword2",
+      "passwordHash": "$2y$10$3G2d6Sxf3dpzQkNq3d0w9OIlBdej0waN65l/znDbvnM2cSFkfJgd2",
       "role": "Client",
       "clientInfo": {
         "Id": "a2",

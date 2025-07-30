@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x73g++YI3NM=",
+  "dgSpecHash": "IMeiBTwH8w8=",
   "success": true,
   "projectFilePath": "/Users/janm2001/Desktop/runSyncBackend/runSyncBackend.csproj",
   "expectedPackageFiles": [
+    "/Users/janm2001/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/Users/janm2001/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/janm2001/.nuget/packages/microsoft.aspnetcore.openapi/7.0.9/microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "/Users/janm2001/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

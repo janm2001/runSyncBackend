@@ -87,3 +87,4 @@ C:/Users/jan.mackovic/Desktop/runSyncBackend/bin/Debug/net9.0/ZstdSharp.dll
 /Users/janm2001/Desktop/runSyncBackend/obj/Debug/net9.0/runSyncBackend.pdb
 /Users/janm2001/Desktop/runSyncBackend/obj/Debug/net9.0/runSyncBackend.genruntimeconfig.cache
 /Users/janm2001/Desktop/runSyncBackend/obj/Debug/net9.0/ref/runSyncBackend.dll
+/Users/janm2001/Desktop/runSyncBackend/bin/Debug/net9.0/BCrypt.Net-Next.dll

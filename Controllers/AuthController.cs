@@ -2,11 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using runSyncBackend.Models;
+using Microsoft.AspNetCore.Authorization;
 
 
-    
+
 namespace runSyncBackend.Controllers;
-   [ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
@@ -29,14 +30,16 @@ namespace runSyncBackend.Controllers;
             return CreatedAtAction(nameof(Register), new { id = user.Id }, user);
         }
 
-        [HttpPost("login")]
-        public async Task<ActionResult<User>> Login(string email, string password)
-        {
-            var user = await _users.Find(u => u.Email == email && u.PasswordHash == password).FirstOrDefaultAsync();
-            if (user == null)
+    [HttpPost("login")]
+    [AllowAnonymous] 
+        public async Task<ActionResult<User>> Login([FromBody] LoginRequest request)
+    {
+
+        var user = await _users.Find(u => u.Email == request.Email).FirstOrDefaultAsync();
+        if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
             {
-                return Unauthorized();
-            }
-            return user;
+            return Unauthorized("Invalid email or password.");
         }
+        return Ok(user);
+    }
     }

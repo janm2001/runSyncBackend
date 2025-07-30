@@ -20,6 +20,7 @@ namespace RunSync.Services
 
         public async Task SeedData()
         {
+            await SeedCollection<User>("users");
             await SeedCollection<Athlete>("athletes");
             await SeedCollection<Group>("groups");
             await SeedCollection<Training>("trainings");
