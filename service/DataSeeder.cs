@@ -20,25 +20,32 @@ namespace RunSync.Services
 
         public async Task SeedData()
         {
-            await SeedCollection<User>("users");
-            await SeedCollection<Athlete>("athletes");
-            await SeedCollection<Group>("groups");
-            await SeedCollection<Training>("trainings");
-            await SeedCollection<MonthlyProgress>("monthlyProgress");
-            await SeedCollection<AttendanceData>("attendanceData");
+            // Read JSON file once to avoid multiple file I/O operations
+            var jsonData = File.ReadAllText("data.json");
+            var root = JsonConvert.DeserializeObject<Root>(jsonData);
+            if (root == null)
+            {
+                return;
+            }
+
+            var tasks = new[]
+            {
+                SeedCollection<User>("users", root),
+                SeedCollection<Athlete>("athletes", root),
+                SeedCollection<Group>("groups", root),
+                SeedCollection<Training>("trainings", root),
+                SeedCollection<MonthlyProgress>("monthlyProgress", root),
+                SeedCollection<AttendanceData>("attendanceData", root)
+            };
+
+            await Task.WhenAll(tasks);
         }
 
-        private async Task SeedCollection<T>(string collectionName)
+        private async Task SeedCollection<T>(string collectionName, Root root)
         {
             var collection = _database.GetCollection<T>(collectionName);
             if (await collection.CountDocumentsAsync(FilterDefinition<T>.Empty) == 0)
             {
-                var jsonData = File.ReadAllText("data.json");
-                var root = JsonConvert.DeserializeObject<Root>(jsonData);
-                if (root == null)
-                {
-                    return;
-                }
                 var propertyName = collectionName.Substring(0, 1).ToUpper() + collectionName.Substring(1);
                 var propertyInfo = root.GetType().GetProperty(propertyName);
                 if (propertyInfo == null)
