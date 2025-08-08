@@ -1,6 +1,7 @@
 using MongoDB.Driver;
 using runSyncBackend.service.RunSync.Services;
 using MongoDB.Bson;
+using runSyncBackend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ var database = client.GetDatabase(databaseName);
 
 builder.Services.AddTransient<DataSeeder>();
 builder.Services.AddSingleton(database);
+builder.Services.AddSingleton<CryptoService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddCors(options =>
