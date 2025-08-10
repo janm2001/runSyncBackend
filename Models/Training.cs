@@ -6,7 +6,7 @@ namespace runSyncBackend.Models
     public class Training
     {
         [BsonId]
-         [BsonSerializer(typeof(StringOrObjectIdSerializer))]
+        [BsonSerializer(typeof(StringOrObjectIdSerializer))]
         public string Id { get; set; }
 
         [BsonElement("title")]
@@ -38,5 +38,8 @@ namespace runSyncBackend.Models
 
         [BsonElement("distance")]
         public int? Distance { get; set; }
+        
+        [BsonElement("pace")]
+        public string? Pace { get; set; }
     }
 }
