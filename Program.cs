@@ -17,6 +17,7 @@ var database = client.GetDatabase(databaseName);
 builder.Services.AddTransient<DataSeeder>();
 builder.Services.AddSingleton(database);
 builder.Services.AddSingleton<CryptoService>();
+builder.Services.AddHttpClient();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddCors(options =>

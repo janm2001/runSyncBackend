@@ -6,6 +6,7 @@ namespace runSyncBackend.Models
      public class AttendanceData
     {
         [BsonId]
+        [BsonSerializer(typeof(StringOrObjectIdSerializer))]
         public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
         [BsonElement("name")]

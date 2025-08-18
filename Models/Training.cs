@@ -7,7 +7,7 @@ namespace runSyncBackend.Models
     {
         [BsonId]
         [BsonSerializer(typeof(StringOrObjectIdSerializer))]
-        public string Id { get; set; }
+        public string Id { get; set; } = string.Empty;
 
         [BsonElement("title")]
         public string Title { get; set; } = string.Empty;
@@ -31,7 +31,7 @@ namespace runSyncBackend.Models
         public List<Intervals> Intervals { get; set; } = new List<Intervals>();
 
         [BsonElement("attendance")]
-        public List<object> Attendance { get; set; } = new List<object>();
+         public List<int> Attendance { get; set; } = new List<int>();
 
         [BsonElement("completed")]
         public bool Completed { get; set; }
