@@ -11,7 +11,14 @@ namespace runSyncBackend.Controllers;
     [Route("api/[controller]")]
     public class TrainingsController : ControllerBase
     {
+
         private readonly IMongoCollection<Training> _trainings;
+    
+    private static readonly Mutex _trainingMutex = new Mutex(false, "TrainingCreationMutex");
+    
+    private static readonly object _attendanceLock = new object();
+    
+    private static int _trainingCounter = 0;
 
         public TrainingsController(IMongoDatabase database)
         {
@@ -35,18 +42,77 @@ namespace runSyncBackend.Controllers;
         }
 
         [HttpPost]
-        public async Task<ActionResult<Training>> Create(Training training)
+    public async Task<ActionResult<Training>> Create(Training training)
+    {
+        // MUTEX DEMONSTRATION: Ensure only one training is created at a time
+        bool mutexAcquired = false;
+        try
         {
-            // If an ID isn't provided, generate a new ObjectId string for it.
+            mutexAcquired = _trainingMutex.WaitOne(TimeSpan.FromSeconds(10));
+            if (!mutexAcquired)
+            {
+                return StatusCode(408, "Training creation timeout - another process is creating training");
+            }
+
             if (string.IsNullOrEmpty(training.Id))
             {
-                training.Id = ObjectId.GenerateNewId().ToString();
+                training.Id = MongoDB.Bson.ObjectId.GenerateNewId().ToString();
             }
+
+            // Simulate some processing time
+            await Task.Delay(100);
+            
+            Interlocked.Increment(ref _trainingCounter);
             
             await _trainings.InsertOneAsync(training);
-
-            return CreatedAtRoute("GetTraining", new { id = training.Id }, training);
+            
+            return CreatedAtRoute("GetTraining", new { id = training.Id }, new 
+            { 
+                training = training,
+                creationOrder = _trainingCounter,
+                message = "Training created using MUTEX protection"
+            });
         }
+        finally
+        {
+            if (mutexAcquired)
+            {
+                _trainingMutex.ReleaseMutex();
+            }
+        }
+    }
+
+    [HttpPost("{id}/attendance")]
+    public async Task<ActionResult> UpdateAttendance(string id, [FromBody] int athleteId)
+    {
+        return await Task.Run(() =>
+        {
+            lock (_attendanceLock)
+            {
+                var training = _trainings.Find(t => t.Id == id).FirstOrDefault();
+                if (training == null)
+                {
+                    return NotFound();
+                }
+
+                Thread.Sleep(50);
+
+                if (!training.Attendance.Contains(athleteId))
+                {
+                    training.Attendance.Add(athleteId);
+                }
+
+                var updateResult = _trainings.ReplaceOne(t => t.Id == id, training);
+
+                return Ok(new
+                {
+                    message = "Attendance updated using CRITICAL SECTION protection",
+                    athleteId = athleteId,
+                    totalAttendees = training.Attendance.Count
+                }) as ActionResult;
+            }
+        });
+    }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Training trainingIn)
