@@ -4,10 +4,12 @@ using System.Collections.Generic;
 
 namespace runSyncBackend.Models
 {
-     public class Athlete
+    public class Athlete
     {
-        [BsonId]
-        public string Id { get; set; }
+        [BsonId] 
+        [BsonRepresentation(BsonType.ObjectId)] 
+        public string Id { get; set; } = string.Empty;
+
 
         [BsonElement("name")]
         public string Name { get; set; } = string.Empty;
@@ -21,20 +23,23 @@ namespace runSyncBackend.Models
         [BsonElement("joinDate")]
         public string JoinDate { get; set; } = string.Empty;
 
-        [BsonElement("performance")]
-        public int Performance { get; set; }
-
-        [BsonElement("improvement")]
-        public string Improvement { get; set; } = string.Empty;
-
-        [BsonElement("lastRun")]
-        public string LastRun { get; set; } = string.Empty;
-
-        [BsonElement("personalBests")]
-        public PersonalBests PersonalBests { get; set; } =  new PersonalBests();
+        [BsonElement("isActiveAthlete")]
+        public bool IsActiveAthlete { get; set; }
 
         [BsonElement("attendance")]
         public int Attendance { get; set; }
+        
+         [BsonElement("performance")]
+        public int? Performance { get; set; }
+
+        [BsonElement("improvement")]
+        public string? Improvement { get; set; } = string.Empty;
+
+        [BsonElement("lastRun")]
+        public string? LastRun { get; set; } = string.Empty;
+
+        [BsonElement("personalBests")]
+        public PersonalBests? PersonalBests { get; set; } =  new PersonalBests();
     }
 }
 

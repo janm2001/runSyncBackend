@@ -55,7 +55,7 @@ namespace runSyncBackend.Controllers;
             
             // LOOKUP: Count trainings for this athlete
             var trainingCount = await _trainings.CountDocumentsAsync(
-                Builders<Training>.Filter.AnyEq("attendance", int.Parse(athlete.Id))
+                Builders<Training>.Filter.AnyEq("attendance", athlete.Id)
             );
 
             enrichedAthletes.Add(new
@@ -105,6 +105,7 @@ namespace runSyncBackend.Controllers;
         [HttpPost]
         public async Task<ActionResult<Athlete>> Create(Athlete athlete)
         {
+            athlete.Id = null; 
             await _athletes.InsertOneAsync(athlete);
             return CreatedAtRoute("GetAthlete", new { id = athlete.Id.ToString() }, athlete);
         }
