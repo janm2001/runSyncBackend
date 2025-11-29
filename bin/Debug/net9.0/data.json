@@ -1,16 +1,221 @@
 {
-  "athletes": [],
+  "athletes": [
+    {
+      "id": "000000000000000000000b01",
+      "name": "Ana Kovačević",
+      "email": "ana.kovacevic@email.com",
+      "group": "Beginner Group",
+      "joinDate": "2024-03-15",
+      "isActiveAthlete": true,
+      "attendance": 85,
+      "performance": 72,
+      "improvement": "+8%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "27:30",
+        "10K": "57:45",
+        "halfMarathon": "2:08:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b02",
+      "name": "Luka Babić",
+      "email": "luka.babic@email.com",
+      "group": "Intermediate Group",
+      "joinDate": "2023-10-20",
+      "isActiveAthlete": true,
+      "attendance": 92,
+      "performance": 85,
+      "improvement": "+12%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "22:15",
+        "10K": "46:30",
+        "halfMarathon": "1:44:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b03",
+      "name": "Petra Novak",
+      "email": "petra.novak@email.com",
+      "group": "Advanced Group",
+      "joinDate": "2023-06-01",
+      "isActiveAthlete": true,
+      "attendance": 96,
+      "performance": 94,
+      "improvement": "+6%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "18:45",
+        "10K": "39:20",
+        "halfMarathon": "1:26:30"
+      }
+    },
+    {
+      "id": "000000000000000000000b04",
+      "name": "Ivan Perić",
+      "email": "ivan.peric@email.com",
+      "group": "Beginner Group",
+      "joinDate": "2024-05-10",
+      "isActiveAthlete": true,
+      "attendance": 68,
+      "performance": 58,
+      "improvement": "+15%",
+      "lastRun": "3 days ago",
+      "personalBests": {
+        "5K": "32:00",
+        "10K": "1:08:00",
+        "halfMarathon": "2:35:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b05",
+      "name": "Maja Horvat",
+      "email": "maja.horvat@email.com",
+      "group": "Intermediate Group",
+      "joinDate": "2024-01-08",
+      "isActiveAthlete": true,
+      "attendance": 88,
+      "performance": 79,
+      "improvement": "+10%",
+      "lastRun": "2 days ago",
+      "personalBests": {
+        "5K": "24:30",
+        "10K": "51:15",
+        "halfMarathon": "1:52:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b06",
+      "name": "Tomislav Jurić",
+      "email": "tomislav.juric@email.com",
+      "group": "Advanced Group",
+      "joinDate": "2023-04-15",
+      "isActiveAthlete": true,
+      "attendance": 94,
+      "performance": 91,
+      "improvement": "+4%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "17:30",
+        "10K": "36:45",
+        "halfMarathon": "1:20:15"
+      }
+    },
+    {
+      "id": "000000000000000000000b07",
+      "name": "Nina Šimić",
+      "email": "nina.simic@email.com",
+      "group": "spansko 4",
+      "joinDate": "2024-02-20",
+      "isActiveAthlete": true,
+      "attendance": 78,
+      "performance": 65,
+      "improvement": "+20%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "29:00",
+        "10K": "1:01:30",
+        "halfMarathon": "2:18:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b08",
+      "name": "David Matić",
+      "email": "david.matic@email.com",
+      "group": "spansko 5",
+      "joinDate": "2023-09-12",
+      "isActiveAthlete": true,
+      "attendance": 90,
+      "performance": 82,
+      "improvement": "+9%",
+      "lastRun": "1 day ago",
+      "personalBests": {
+        "5K": "23:00",
+        "10K": "48:30",
+        "halfMarathon": "1:48:45"
+      }
+    },
+    {
+      "id": "000000000000000000000b09",
+      "name": "Eva Radić",
+      "email": "eva.radic@email.com",
+      "group": "spansko 6",
+      "joinDate": "2024-04-01",
+      "isActiveAthlete": false,
+      "attendance": 45,
+      "performance": 55,
+      "improvement": "+3%",
+      "lastRun": "2 weeks ago",
+      "personalBests": {
+        "5K": "30:45",
+        "10K": "1:05:00",
+        "halfMarathon": ""
+      }
+    },
+    {
+      "id": "000000000000000000000b10",
+      "name": "Filip Krajina",
+      "email": "filip.krajina@email.com",
+      "group": "Beginner Group",
+      "joinDate": "2024-06-15",
+      "isActiveAthlete": true,
+      "attendance": 75,
+      "performance": 48,
+      "improvement": "+25%",
+      "lastRun": "4 days ago",
+      "personalBests": {
+        "5K": "35:00",
+        "10K": "",
+        "halfMarathon": ""
+      }
+    },
+    {
+      "id": "000000000000000000000b11",
+      "name": "Sara Vuković",
+      "email": "sara.vukovic@email.com",
+      "group": "Intermediate Group",
+      "joinDate": "2023-11-25",
+      "isActiveAthlete": true,
+      "attendance": 86,
+      "performance": 77,
+      "improvement": "+14%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "25:00",
+        "10K": "52:30",
+        "halfMarathon": "1:56:00"
+      }
+    },
+    {
+      "id": "000000000000000000000b12",
+      "name": "Karlo Đurić",
+      "email": "karlo.djuric@email.com",
+      "group": "Advanced Group",
+      "joinDate": "2023-02-10",
+      "isActiveAthlete": true,
+      "attendance": 98,
+      "performance": 96,
+      "improvement": "+2%",
+      "lastRun": "Today",
+      "personalBests": {
+        "5K": "16:45",
+        "10K": "35:00",
+        "halfMarathon": "1:17:30"
+      }
+    }
+  ],
   "users": [
     {
-      "id": "u1",
+      "id": "000000000000000000000001",
       "firstName": "Jan",
       "lastName": "Mackovic",
       "email": "jan.mackovic@email.com",
-      "passwordHash": "$2y$10$3G2d6Sxf3dpzQkNq3d0w9OIlBdej0waN65l/znDbvnM2cSFkfJgd2",
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
       "role": "Coach",
       "clientInfo": null,
       "coachInfo": {
-        "Id": "a1",
+        "Id": "000000000000000000000a01",
         "Name": "Jan Mackovic",
         "Email": "jan.mackovic@email.com",
         "Group": "Coaches",
@@ -27,14 +232,14 @@
       }
     },
     {
-      "id": "u2",
+      "id": "000000000000000000000002",
       "firstName": "Hrvoje",
       "lastName": "Horvat",
       "email": "hrvoje.horvat@email.com",
-      "passwordHash": "$2y$10$3G2d6Sxf3dpzQkNq3d0w9OIlBdej0waN65l/znDbvnM2cSFkfJgd2",
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
       "role": "Client",
       "clientInfo": {
-        "Id": "a2",
+        "Id": "000000000000000000000a02",
         "Name": "Hrvoje Horvat",
         "Email": "hrvoje.horvat@email.com",
         "Group": "Beginner Group",
@@ -52,169 +257,259 @@
       "coachInfo": null
     },
     {
-      "id": "1",
-      "name": "Sarah Johnson",
+      "id": "000000000000000000000003",
+      "firstName": "Sarah",
+      "lastName": "Johnson",
       "email": "sarah@email.com",
-      "group": "Beginner Group",
-      "joinDate": "2024-01-15",
-      "performance": 85,
-      "improvement": "+12%",
-      "lastRun": "2 days ago",
-      "personalBests": {
-        "5K": "25:30",
-        "10K": "52:15",
-        "halfMarathon": "1:58:30"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a03",
+        "Name": "Sarah Johnson",
+        "Email": "sarah@email.com",
+        "Group": "Beginner Group",
+        "JoinDate": "2024-01-15",
+        "Performance": 85,
+        "Improvement": "+12%",
+        "LastRun": "2 days ago",
+        "PersonalBests": {
+          "FiveK": "25:30",
+          "TenK": "52:15",
+          "HalfMarathon": "1:58:30"
+        },
+        "Attendance": 85
       },
-      "attendance": 85
+      "coachInfo": null
     },
     {
-      "id": "2",
-      "name": "Mike Chen",
+      "id": "000000000000000000000004",
+      "firstName": "Mike",
+      "lastName": "Chen",
       "email": "mike@email.com",
-      "group": "Intermediate Group",
-      "joinDate": "2023-11-08",
-      "performance": 92,
-      "improvement": "+8%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "21:45",
-        "10K": "45:20",
-        "halfMarathon": "1:42:15"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a04",
+        "Name": "Mike Chen",
+        "Email": "mike@email.com",
+        "Group": "Intermediate Group",
+        "JoinDate": "2023-11-08",
+        "Performance": 92,
+        "Improvement": "+8%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "21:45",
+          "TenK": "45:20",
+          "HalfMarathon": "1:42:15"
+        },
+        "Attendance": 92
       },
-      "attendance": 92
+      "coachInfo": null
     },
     {
-      "id": "3",
-      "name": "Emma Davis",
+      "id": "000000000000000000000005",
+      "firstName": "Emma",
+      "lastName": "Davis",
       "email": "emma@email.com",
-      "group": "Advanced Group",
-      "joinDate": "2023-09-20",
-      "performance": 88,
-      "improvement": "+15%",
-      "lastRun": "Today",
-      "personalBests": {
-        "5K": "19:30",
-        "10K": "40:45",
-        "halfMarathon": "1:28:30"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a05",
+        "Name": "Emma Davis",
+        "Email": "emma@email.com",
+        "Group": "Advanced Group",
+        "JoinDate": "2023-09-20",
+        "Performance": 88,
+        "Improvement": "+15%",
+        "LastRun": "Today",
+        "PersonalBests": {
+          "FiveK": "19:30",
+          "TenK": "40:45",
+          "HalfMarathon": "1:28:30"
+        },
+        "Attendance": 96
       },
-      "attendance": 96
+      "coachInfo": null
     },
     {
-      "id": "4",
-      "name": "James Wilson",
+      "id": "000000000000000000000006",
+      "firstName": "James",
+      "lastName": "Wilson",
       "email": "james@email.com",
-      "group": "Beginner Group",
-      "joinDate": "2024-02-01",
-      "performance": 78,
-      "improvement": "+5%",
-      "lastRun": "3 days ago",
-      "personalBests": {
-        "5K": "28:15",
-        "10K": "58:30",
-        "halfMarathon": "2:15:45"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a06",
+        "Name": "James Wilson",
+        "Email": "james@email.com",
+        "Group": "Beginner Group",
+        "JoinDate": "2024-02-01",
+        "Performance": 78,
+        "Improvement": "+5%",
+        "LastRun": "3 days ago",
+        "PersonalBests": {
+          "FiveK": "28:15",
+          "TenK": "58:30",
+          "HalfMarathon": "2:15:45"
+        },
+        "Attendance": 72
       },
-      "attendance": 72
+      "coachInfo": null
     },
     {
-      "id": "5",
-      "name": "Lisa Park",
+      "id": "000000000000000000000007",
+      "firstName": "Lisa",
+      "lastName": "Park",
       "email": "lisa@email.com",
-      "group": "Intermediate Group",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a07",
+        "Name": "Lisa Park",
+        "Email": "lisa@email.com",
+        "Group": "Intermediate Group",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 88
       },
-      "attendance": 88
+      "coachInfo": null
     },
     {
-      "id": "6",
-      "name": "Josip Josipovic",
+      "id": "000000000000000000000008",
+      "firstName": "Josip",
+      "lastName": "Josipovic",
       "email": "jozo@email.com",
-      "group": "spansko 4",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a08",
+        "Name": "Josip Josipovic",
+        "Email": "jozo@email.com",
+        "Group": "spansko 4",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 81
       },
-      "attendance": 81
+      "coachInfo": null
     },
     {
-      "id": "7",
-      "name": "Nika Nikic",
+      "id": "000000000000000000000009",
+      "firstName": "Nika",
+      "lastName": "Nikic",
       "email": "niksa@email.com",
-      "group": "spansko 5",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a09",
+        "Name": "Nika Nikic",
+        "Email": "niksa@email.com",
+        "Group": "spansko 5",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 88
       },
-      "attendance": 88
+      "coachInfo": null
     },
     {
-      "id": "8",
-      "name": "Marko Markovic",
+      "id": "00000000000000000000000a",
+      "firstName": "Marko",
+      "lastName": "Markovic",
       "email": "marks@email.com",
-      "group": "spansko 6",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a0a",
+        "Name": "Marko Markovic",
+        "Email": "marks@email.com",
+        "Group": "spansko 6",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 83
       },
-      "attendance": 83
+      "coachInfo": null
     },
     {
-      "id": "9",
-      "name": "Stipa Stipic",
+      "id": "00000000000000000000000b",
+      "firstName": "Stipa",
+      "lastName": "Stipic",
       "email": "stips@email.com",
-      "group": "spansko 4",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a0b",
+        "Name": "Stipa Stipic",
+        "Email": "stips@email.com",
+        "Group": "spansko 4",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 82
       },
-      "attendance": 82
+      "coachInfo": null
     },
     {
-      "id": "10",
-      "name": "Ana Anic",
+      "id": "00000000000000000000000c",
+      "firstName": "Ana",
+      "lastName": "Anic",
       "email": "anica@email.com",
-      "group": "spansko 5",
-      "joinDate": "2023-12-10",
-      "performance": 90,
-      "improvement": "+18%",
-      "lastRun": "1 day ago",
-      "personalBests": {
-        "5K": "22:30",
-        "10K": "47:15",
-        "halfMarathon": "1:45:20"
+      "passwordHash": "$2a$12$oB4qEyAR2f2OGFR8UwBdk.VM5m6q.ND7oFnMbuGb9Rdd00j2x4hMi",
+      "role": "Client",
+      "clientInfo": {
+        "Id": "000000000000000000000a0c",
+        "Name": "Ana Anic",
+        "Email": "anica@email.com",
+        "Group": "spansko 5",
+        "JoinDate": "2023-12-10",
+        "Performance": 90,
+        "Improvement": "+18%",
+        "LastRun": "1 day ago",
+        "PersonalBests": {
+          "FiveK": "22:30",
+          "TenK": "47:15",
+          "HalfMarathon": "1:45:20"
+        },
+        "Attendance": 88
       },
-      "attendance": 88
+      "coachInfo": null
     }
   ],
   "groups": [
     {
-      "id": "beginner",
+      "id": "000000000000000000000g01",
       "name": "Beginner Group",
       "members": 8,
       "avgPace": "8:30",
@@ -222,7 +517,7 @@
       "description": "Perfect for new runners building their base"
     },
     {
-      "id": "intermediate",
+      "id": "000000000000000000000g02",
       "name": "Intermediate Group",
       "members": 10,
       "avgPace": "7:15",
@@ -230,7 +525,7 @@
       "description": "For runners with 6+ months experience"
     },
     {
-      "id": "advanced",
+      "id": "000000000000000000000g03",
       "name": "Advanced Group",
       "members": 6,
       "avgPace": "6:45",
@@ -240,7 +535,7 @@
   ],
   "trainings": [
     {
-      "id": "1",
+      "id": "000000000000000000000t01",
       "title": "Speed Intervals",
       "type": "intervals",
       "group": "Intermediate Group",
@@ -265,29 +560,29 @@
       "completed": false
     },
     {
-      "id": "2",
+      "id": "000000000000000000000t02",
       "title": "Long Run",
       "type": "long",
       "group": "Advanced Group",
       "date": "2024-06-15",
       "duration": 90,
       "description": "Endurance building long run at conversational pace",
-      "attendance": [3, "3"],
+      "attendance": [3],
       "completed": false
     },
     {
-      "id": "3",
+      "id": "000000000000000000000t03",
       "title": "Recovery Run",
       "type": "recovery",
       "group": "Beginner Group",
       "date": "2024-06-16",
       "duration": 30,
       "description": "Easy pace recovery run for active recovery",
-      "attendance": ["4"],
+      "attendance": [4],
       "completed": false
     },
     {
-      "id": "1e52",
+      "id": "000000000000000000000t04",
       "title": "test 1",
       "group": "spansko 6",
       "type": "Recovery Run",
@@ -299,7 +594,7 @@
       "description": "test"
     },
     {
-      "id": "987a",
+      "id": "000000000000000000000t05",
       "title": "test",
       "group": "spansko 4",
       "type": "Hill Repeats",
@@ -307,72 +602,72 @@
       "date": "2025-07-09",
       "intervals": [],
       "distance": 12,
-      "attendance": ["6", "9"],
+      "attendance": [6, 9],
       "description": "test"
     }
   ],
   "monthlyProgress": [
     {
+      "id": "000000000000000000000m01",
       "month": "Jan",
       "beginner": 65,
       "intermediate": 78,
-      "advanced": 85,
-      "id": "4538"
+      "advanced": 85
     },
     {
+      "id": "000000000000000000000m02",
       "month": "Feb",
       "beginner": 70,
       "intermediate": 82,
-      "advanced": 88,
-      "id": "84f1"
+      "advanced": 88
     },
     {
+      "id": "000000000000000000000m03",
       "month": "Mar",
       "beginner": 75,
       "intermediate": 85,
-      "advanced": 90,
-      "id": "da19"
+      "advanced": 90
     },
     {
+      "id": "000000000000000000000m04",
       "month": "Apr",
       "beginner": 78,
       "intermediate": 87,
-      "advanced": 92,
-      "id": "9364"
+      "advanced": 92
     },
     {
+      "id": "000000000000000000000m05",
       "month": "May",
       "beginner": 82,
       "intermediate": 90,
-      "advanced": 94,
-      "id": "3cbf"
+      "advanced": 94
     },
     {
+      "id": "000000000000000000000m06",
       "month": "Jun",
       "beginner": 85,
       "intermediate": 92,
-      "advanced": 96,
-      "id": "314f"
+      "advanced": 96
     }
   ],
   "attendanceData": [
     {
+      "id": "000000000000000000000d01",
       "name": "Present",
       "value": 75,
-      "color": "#22c55e",
-      "id": "6f4b"
+      "color": "#22c55e"
     },
     {
+      "id": "000000000000000000000d02",
       "name": "Absent",
       "value": 15,
-      "color": "#ef4444",
-      "id": "e8cd"
+      "color": "#ef4444"
     },
     {
+      "id": "000000000000000000000d03",
       "name": "Partial",
       "value": 10,
-      "color": "#f59e0b",
-      "id": "5525"
+      "color": "#f59e0b"
     }
   ]
 }
