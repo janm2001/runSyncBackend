@@ -17,7 +17,7 @@ namespace runSyncBackend.Services
         Task<ServiceResult<List<TrainingResult>>> GetForTraining(string trainingId);
         Task<ServiceResult<TrainingResult>> CreateForTraining(string trainingId, TrainingResult result);
         Task<ServiceResult<List<TrainingResult>>> GetForAthlete(string athleteId);
-        Task<ServiceResult<bool>> Update(string trainingId, string resultId, TrainingResult resultIn);
+        Task<ServiceResult<bool>> UpdateCoachFeedback(string trainingId, string resultId, TrainingResultCoachUpdate update);
     }
 
     public class TrainingResultsService : ITrainingResultsService
@@ -81,13 +81,23 @@ namespace runSyncBackend.Services
             return ServiceResult<List<TrainingResult>>.Ok(results);
         }
 
-        public async Task<ServiceResult<bool>> Update(string trainingId, string resultId, TrainingResult resultIn)
+        public async Task<ServiceResult<bool>> UpdateCoachFeedback(string trainingId, string resultId, TrainingResultCoachUpdate update)
         {
-            resultIn.Id = resultId;
-            resultIn.TrainingId = trainingId;
+            if (update.CoachGrade.HasValue && (update.CoachGrade < 1 || update.CoachGrade > 10))
+            {
+                return ServiceResult<bool>.BadRequest("CoachGrade must be between 1 and 10.");
+            }
 
-            var update = await _results.ReplaceOneAsync(r => r.Id == resultId && r.TrainingId == trainingId, resultIn);
-            if (update.MatchedCount == 0)
+            var filter = Builders<TrainingResult>.Filter.Eq(r => r.Id, resultId) &
+                         Builders<TrainingResult>.Filter.Eq(r => r.TrainingId, trainingId);
+
+            var updateDef = Builders<TrainingResult>.Update
+                .Set(r => r.CoachGrade, update.CoachGrade)
+                .Set(r => r.CoachNotes, update.CoachNotes)
+                .Set(r => r.ImprovementAreas, update.ImprovementAreas);
+
+            var result = await _results.UpdateOneAsync(filter, updateDef);
+            if (result.MatchedCount == 0)
             {
                 return ServiceResult<bool>.NotFound("Result not found.");
             }

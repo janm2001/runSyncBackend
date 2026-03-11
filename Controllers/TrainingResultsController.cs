@@ -49,9 +49,12 @@ public class TrainingResultsController : ControllerBase
     }
 
     [HttpPut("api/trainings/{trainingId}/results/{resultId}")]
-    public async Task<IActionResult> Update(string trainingId, string resultId, TrainingResult resultIn)
+    public async Task<IActionResult> UpdateCoachFeedback(
+        string trainingId,
+        string resultId,
+        [FromBody] TrainingResultCoachUpdate update)
     {
-        var result = await _trainingResultsService.Update(trainingId, resultId, resultIn);
+        var result = await _trainingResultsService.UpdateCoachFeedback(trainingId, resultId, update);
         if (!result.Success)
         {
             return StatusCode(result.StatusCode, result.Error);
